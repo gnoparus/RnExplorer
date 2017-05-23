@@ -11,12 +11,19 @@ import DatePickerDemo from "../screens/DatePickerDemo";
 import DropdownDemo from "../screens/DropdownDemo";
 import SliderDemo from "../screens/SliderDemo";
 import TextFieldDemo from "../screens/TextFieldDemo";
+import ImageDemo from "../screens/ImageDemo";
 
 export const Root = StackNavigator({
   DemoMenu: {
     screen: DemoMenu,
     navigationOptions: {
       title: "React Native UI Explorer"
+    }
+  },
+  ImageDemo: {
+    screen: ImageDemo,
+    navigationOptions: {
+      title: "Image Demo"
     }
   },
   ButtonDemo: {

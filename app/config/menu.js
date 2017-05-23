@@ -5,6 +5,11 @@ const menu = [
     route: "ButtonDemo"
   },
   {
+    name: "Image",
+    description: "Image Demo",
+    route: "ImageDemo"
+  },
+  {
     name: "Date Picker",
     description: "Date Picker Demo",
     route: "DatePickerDemo"
