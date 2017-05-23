@@ -1,4 +1,4 @@
-export const menu = [
+const menu = [
   {
     name: "Button",
     description: "Button Demo",
@@ -25,3 +25,5 @@ export const menu = [
     route: "TextFieldDemo"
   },
 ];
+
+export default menu;

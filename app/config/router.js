@@ -5,12 +5,12 @@
 import React from "react";
 import { StackNavigator } from "react-navigation";
 
-import { DemoMenu } from "../screens/DemoMenu";
-import { ButtonDemo } from "../screens/ButtonDemo";
-import { DatePickerDemo } from "../screens/DatePickerDemo";
-import { DropdownDemo } from "../screens/DropdownDemo";
-import { SliderDemo } from "../screens/SliderDemo";
-import { TextFieldDemo } from "../screens/TextFieldDemo";
+import DemoMenu from "../screens/DemoMenu";
+import ButtonDemo from "../screens/ButtonDemo";
+import DatePickerDemo from "../screens/DatePickerDemo";
+import DropdownDemo from "../screens/DropdownDemo";
+import SliderDemo from "../screens/SliderDemo";
+import TextFieldDemo from "../screens/TextFieldDemo";
 
 export const Root = StackNavigator({
   DemoMenu: {
@@ -28,26 +28,25 @@ export const Root = StackNavigator({
   DatePickerDemo: {
     screen: DatePickerDemo,
     navigationOptions: {
-      title: "Date Picker Demo",
+      title: "Date Picker Demo"
     }
   },
   DropdownDemo: {
     screen: DropdownDemo,
     navigationOptions: {
-      title: "Drop Down Demo", 
+      title: "Drop Down Demo"
     }
   },
   SliderDemo: {
     screen: SliderDemo,
     navigationOptions: {
-      title: "Slider Demo", 
+      title: "Slider Demo"
     }
   },
   TextFieldDemo: {
     screen: TextFieldDemo,
     navigationOptions: {
-      title: "TextField Demo", 
+      title: "TextField Demo"
     }
-  },
-
+  }
 });

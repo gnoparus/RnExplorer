@@ -6,4 +6,6 @@
 import React, { Component } from "react";
 import { Text } from "react-native";
 
-export const DatePickerDemo = () => <Text>DatePickerDemo</Text>;
+const DatePickerDemo = () => <Text>DatePickerDemo</Text>;
+
+export default DatePickerDemo;

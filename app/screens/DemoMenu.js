@@ -5,9 +5,9 @@
 import React, { Component } from "react";
 import { ScrollView } from "react-native";
 import { Tile, List, ListItem, Button } from "react-native-elements";
-import { menu } from "../config/menu";
+import menu from "../config/menu";
 
-export const DemoMenu = ({ navigation }) => (
+const DemoMenu = ({ navigation }) => (
   <ScrollView>
     <List>
       {menu.map(menuitem => (
@@ -16,9 +16,10 @@ export const DemoMenu = ({ navigation }) => (
           title={menuitem.name}
           subtitle={menuitem.description}
           onPress={() => navigation.navigate(menuitem.route)}
-          
         />
       ))}
     </List>
   </ScrollView>
 );
+
+export default DemoMenu;
