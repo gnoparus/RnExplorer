@@ -1,27 +1,27 @@
 export const menu = [
   {
     name: "Button",
-    Description: "Button Demo",
+    description: "Button Demo",
     route: "ButtonDemo"
   },
   {
     name: "Date Picker",
-    Description: "Date Picker Demo",
+    description: "Date Picker Demo",
     route: "DatePickerDemo"
   },
   {
     name: "Dropdown",
-    Description: "Dropdown Demo",
+    description: "Dropdown Demo",
     route: "DropdownDemo"
   },
   {
     name: "Slider",
-    Description: "Slider Demo",
+    description: "Slider Demo",
     route: "SliderDemo"
   },
   {
     name: "TextField",
-    Description: "TextField Demo",
+    description: "TextField Demo",
     route: "TextFieldDemo"
   },
 ];
