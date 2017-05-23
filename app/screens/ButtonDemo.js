@@ -12,6 +12,9 @@ const ButtonDemo = () => (
 
       <Button title="BUTTON Normal" buttonStyle={styles.button} />
 
+      <Button title="Disabled Button" disabled buttonStyle={styles.button} backgroundColor="red" />
+
+
       <Button
         raised
         icon={{ name: "cached" }}
