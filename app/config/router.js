@@ -1,21 +1,53 @@
-import React from 'react';
-import { TabNavigator, StackNavigator } from 'react-navigation';
-import { Icon } from 'react-native-elements';
+/**
+ * @flow
+ */
 
-import Settings from '../screens/Settings';
+import React from "react";
+import { StackNavigator } from "react-navigation";
 
+import { DemoMenu } from "../screens/DemoMenu";
+import { ButtonDemo } from "../screens/ButtonDemo";
+import { DatePickerDemo } from "../screens/DatePickerDemo";
+import { DropdownDemo } from "../screens/DropdownDemo";
+import { SliderDemo } from "../screens/SliderDemo";
+import { TextFieldDemo } from "../screens/TextFieldDemo";
 
 export const Root = StackNavigator({
-  Menu: {
+  DemoMenu: {
     screen: DemoMenu,
+    navigationOptions: {
+      title: "React Native UI Explorer"
+    }
   },
   ButtonDemo: {
     screen: ButtonDemo,
+    navigationOptions: {
+      title: "Button Demo"
+    }
   },
   DatePickerDemo: {
     screen: DatePickerDemo,
+    navigationOptions: {
+      title: "Date Picker Demo",
+    }
   },
   DropdownDemo: {
     screen: DropdownDemo,
+    navigationOptions: {
+      title: "Drop Down Demo", 
+    }
   },
+  SliderDemo: {
+    screen: SliderDemo,
+    navigationOptions: {
+      title: "Slider Demo", 
+    }
+  },
+  TextFieldDemo: {
+    screen: TextFieldDemo,
+    navigationOptions: {
+      title: "TextField Demo", 
+    }
+  },
+
 });
