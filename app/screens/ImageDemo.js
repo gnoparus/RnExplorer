@@ -2,14 +2,22 @@
  * @flow
  */
 
-
 import React, { Component } from "react";
 import { Text, Image, ScrollView, View } from "react-native";
 
-const ImageDemo =  () => <ScrollView>
+import PhotoView from "react-native-photo-view";
 
-<Image source={require('../../images/lao01.jpg')} />
+const ImageDemo = () => (
+  <ScrollView>
 
-</ScrollView>;
+    <PhotoView
+      source={require("../../images/lao01.jpg")}
+      minimumZoomScale={0.5}
+      maximumZoomScale={3}
+      style={{width: 300, height: 300}}
+    />
+
+  </ScrollView>
+);
 
 export default ImageDemo;
