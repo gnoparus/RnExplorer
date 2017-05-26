@@ -15,7 +15,8 @@ const DemoMenu = ({ navigation }) => (
           key={menuitem.route}
           title={menuitem.name}
           subtitle={menuitem.description}
-          onPress={() => navigation.navigate(menuitem.route)}
+          onPress={() => navigation.navigate(menuitem.route, {image: menuitem.image})}
+          
         />
       ))}
     </List>

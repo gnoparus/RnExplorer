@@ -3,7 +3,7 @@
  */
 
 import React from "react";
-import { StackNavigator } from "react-navigation";
+import { StackNavigator, TabNavigator } from "react-navigation";
 
 import DemoMenu from "../screens/DemoMenu";
 import ButtonDemo from "../screens/ButtonDemo";
@@ -12,6 +12,7 @@ import DropdownDemo from "../screens/DropdownDemo";
 import SliderDemo from "../screens/SliderDemo";
 import TextFieldDemo from "../screens/TextFieldDemo";
 import ImageDemo from "../screens/ImageDemo";
+import { PinchZoomViewDemo, PinchZoomViewDemo2, PinchZoomViewDemo3 } from "../screens/PinchZoomViewDemo";
 
 export const Root = StackNavigator({
   DemoMenu: {
@@ -24,6 +25,12 @@ export const Root = StackNavigator({
     screen: ImageDemo,
     navigationOptions: {
       title: "Image Demo"
+    }
+  },
+  PinchZoomViewDemo: {
+    screen: LaoTabs,
+    navigationOptions: {
+      title: "PinchZoomView Demo"
     }
   },
   ButtonDemo: {
@@ -56,4 +63,29 @@ export const Root = StackNavigator({
       title: "TextField Demo"
     }
   }
+});
+
+export const LaoTabs = TabNavigator( {
+  BlankForm: {
+    screen: PinchZoomViewDemo, 
+    navigationOptions: {
+      tabBarLabel: 'Original',
+      tabBarIcon: ({ tintColor }) => <Icon name="list" size={35} color={tintColor} />,
+    },
+  }, 
+  TranslatedForm: {
+    screen: PinchZoomViewDemo2, 
+    navigationOptions: {
+      tabBarLabel: 'Translated',
+      tabBarIcon: ({ tintColor }) => <Icon name="list" size={35} color={tintColor} />,
+    },
+  }, 
+  ExampledForm: {
+    screen: PinchZoomViewDemo3, 
+    navigationOptions: {
+      tabBarLabel: 'Example',
+      tabBarIcon: ({ tintColor }) => <Icon name="list" size={35} color={tintColor} />,
+    },
+
+  },
 });

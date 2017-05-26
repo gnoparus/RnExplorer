@@ -7,7 +7,14 @@ const menu = [
   {
     name: "Image",
     description: "Image Demo",
-    route: "ImageDemo"
+    route: "ImageDemo", 
+    
+  },
+  {
+    name: "PinchZoomView",
+    description: "PinchZoomView Demo",
+    route: "PinchZoomViewDemo", 
+    
   },
   {
     name: "Date Picker",
