@@ -19,19 +19,19 @@ export const LaoTabs = TabNavigator( {
   BlankForm: {
     screen: PinchZoomViewDemo, 
     navigationOptions: {
-      tabBarLabel: 'Original',
+      tabBarLabel: 'ต้นฉบับ',
     },
   }, 
   TranslatedForm: {
     screen: PinchZoomViewDemo2, 
     navigationOptions: {
-      tabBarLabel: 'Translated',
+      tabBarLabel: 'คำแปล',
     },
   }, 
   ExampledForm: {
     screen: PinchZoomViewDemo3, 
     navigationOptions: {
-      tabBarLabel: 'Example',
+      tabBarLabel: 'ตัวอย่าง',
     },
 
   },

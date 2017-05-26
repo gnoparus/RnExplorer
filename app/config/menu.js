@@ -29,7 +29,7 @@ const menu = [
     
   },
   {
-    name: "แคนดา",
+    name: "แคนาดา",
     description: "PinchZoomView Demo",
     route: "PinchZoomViewDemo3", 
     
