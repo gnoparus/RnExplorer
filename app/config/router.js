@@ -12,24 +12,24 @@ import DropdownDemo from "../screens/DropdownDemo";
 import SliderDemo from "../screens/SliderDemo";
 import TextFieldDemo from "../screens/TextFieldDemo";
 import ImageDemo from "../screens/ImageDemo";
-import { PinchZoomViewDemo, PinchZoomViewDemo2, PinchZoomViewDemo3 } from "../screens/PinchZoomViewDemo";
+import { TransformableImageDemo, TransformableImageDemo2, TransformableImageDemo3 } from "../screens/TransformableImageDemo";
 
 
 export const LaoTabs = TabNavigator( {
   BlankForm: {
-    screen: PinchZoomViewDemo, 
+    screen: TransformableImageDemo, 
     navigationOptions: {
       tabBarLabel: 'ต้นฉบับ',
     },
   }, 
   TranslatedForm: {
-    screen: PinchZoomViewDemo2, 
+    screen: TransformableImageDemo2, 
     navigationOptions: {
       tabBarLabel: 'คำแปล',
     },
   }, 
   ExampledForm: {
-    screen: PinchZoomViewDemo3, 
+    screen: TransformableImageDemo3, 
     navigationOptions: {
       tabBarLabel: 'ตัวอย่าง',
     },
@@ -117,5 +117,7 @@ export const Root = StackNavigator({
     }
   }
 });
+
+
 
 
