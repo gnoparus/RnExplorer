@@ -14,6 +14,29 @@ import TextFieldDemo from "../screens/TextFieldDemo";
 import ImageDemo from "../screens/ImageDemo";
 import { PinchZoomViewDemo, PinchZoomViewDemo2, PinchZoomViewDemo3 } from "../screens/PinchZoomViewDemo";
 
+
+export const LaoTabs = TabNavigator( {
+  BlankForm: {
+    screen: PinchZoomViewDemo, 
+    navigationOptions: {
+      tabBarLabel: 'Original',
+    },
+  }, 
+  TranslatedForm: {
+    screen: PinchZoomViewDemo2, 
+    navigationOptions: {
+      tabBarLabel: 'Translated',
+    },
+  }, 
+  ExampledForm: {
+    screen: PinchZoomViewDemo3, 
+    navigationOptions: {
+      tabBarLabel: 'Example',
+    },
+
+  },
+});
+
 export const Root = StackNavigator({
   DemoMenu: {
     screen: DemoMenu,
@@ -27,10 +50,40 @@ export const Root = StackNavigator({
       title: "Image Demo"
     }
   },
-  PinchZoomViewDemo: {
+  PinchZoomViewDemo0: {
     screen: LaoTabs,
     navigationOptions: {
-      title: "PinchZoomView Demo"
+      title: "ลาว"
+    }
+  },
+  PinchZoomViewDemo1: {
+    screen: LaoTabs,
+    navigationOptions: {
+      title: "พม่า"
+    }
+  },
+  PinchZoomViewDemo2: {
+    screen: LaoTabs,
+    navigationOptions: {
+      title: "อเมริกา"
+    }
+  },
+  PinchZoomViewDemo3: {
+    screen: LaoTabs,
+    navigationOptions: {
+      title: "แคนดา"
+    }
+  },
+  PinchZoomViewDemo4: {
+    screen: LaoTabs,
+    navigationOptions: {
+      title: "จีน"
+    }
+  },
+  PinchZoomViewDemo5: {
+    screen: LaoTabs,
+    navigationOptions: {
+      title: "ญี่ปุ่น"
     }
   },
   ButtonDemo: {
@@ -65,27 +118,4 @@ export const Root = StackNavigator({
   }
 });
 
-export const LaoTabs = TabNavigator( {
-  BlankForm: {
-    screen: PinchZoomViewDemo, 
-    navigationOptions: {
-      tabBarLabel: 'Original',
-      tabBarIcon: ({ tintColor }) => <Icon name="list" size={35} color={tintColor} />,
-    },
-  }, 
-  TranslatedForm: {
-    screen: PinchZoomViewDemo2, 
-    navigationOptions: {
-      tabBarLabel: 'Translated',
-      tabBarIcon: ({ tintColor }) => <Icon name="list" size={35} color={tintColor} />,
-    },
-  }, 
-  ExampledForm: {
-    screen: PinchZoomViewDemo3, 
-    navigationOptions: {
-      tabBarLabel: 'Example',
-      tabBarIcon: ({ tintColor }) => <Icon name="list" size={35} color={tintColor} />,
-    },
 
-  },
-});
